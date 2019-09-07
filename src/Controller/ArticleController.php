@@ -4,10 +4,11 @@
 namespace App\Controller;
 
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArticleController
+class ArticleController extends AbstractController
 {
     /**
      * @Route("/")
@@ -18,10 +19,12 @@ class ArticleController
     }
 
     /**
-     * @Route("/news")
+     * @Route("/{slug}")
      */
-    public function show()
+    public function show($slug)
     {
-        return new Response('Here are articles');
+        return $this->render('article/show.html.twig', [
+            'title' => $slug
+        ]);
     }
 }
