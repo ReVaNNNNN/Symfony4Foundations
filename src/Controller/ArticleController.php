@@ -19,12 +19,12 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/{slug}")
+     * @Route("/kot")
      */
-    public function show($slug)
+    public function show()
     {
-        return $this->render('article/show.html.twig', [
-            'title' => $slug
+        return $this->render('homepage.html.twig', [
+            'title' => 'HUhuehuee'
         ]);
     }
 }
