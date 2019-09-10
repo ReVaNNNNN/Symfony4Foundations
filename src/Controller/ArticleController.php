@@ -19,12 +19,12 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/kot")
+     * @Route("/show")
      */
     public function show()
     {
         return $this->render('homepage.html.twig', [
-            'title' => 'HUhuehuee'
+            'title' => 'Example title'
         ]);
     }
 }
