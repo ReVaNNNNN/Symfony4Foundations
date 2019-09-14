@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
@@ -19,11 +19,11 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/kot")
+     * @Route("/show")
      */
     public function show()
     {
-        return $this->render('homepage.html.twig', [
+        return $this->render('tutorial/templates/homepage.html.twig', [
             'title' => 'HUhuehuee'
         ]);
     }
