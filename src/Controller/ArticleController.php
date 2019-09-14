@@ -23,7 +23,7 @@ class ArticleController extends AbstractController
      */
     public function show()
     {
-        return $this->render('tutorial/templates/homepage.html.twig', [
+        return $this->render('homepage.html.twig', [
             'title' => 'HUhuehuee'
         ]);
     }
