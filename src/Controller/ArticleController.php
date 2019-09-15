@@ -19,7 +19,7 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/show")
+     * @Route("/homepage, name="app_homepage_html")
      */
     public function show()
     {
