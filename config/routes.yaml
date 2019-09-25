@@ -1,3 +1,3 @@
-index:
-    path: /news
-    controller: App\Controller\ArticleController::show
+#index:
+#    path: /news
+#    controller: App\Controller\ArticleController::show
