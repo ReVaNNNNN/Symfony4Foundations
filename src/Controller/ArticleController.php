@@ -24,7 +24,7 @@ class ArticleController extends AbstractController
     public function show()
     {
         return $this->render('homepage.html.twig', [
-            'title' => 'HUhuehuee'
+            'title' => 'Some title'
         ]);
     }
 }
